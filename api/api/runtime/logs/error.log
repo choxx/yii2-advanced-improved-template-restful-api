@@ -1,0 +1,54 @@
+2016-07-21 06:32:19 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class api\modules\v1\Module does not exist' in D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\di\Container.php:422
+Stack trace:
+#0 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('api\\modules\\v1\\...')
+#1 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('api\\modules\\v1\\...')
+#2 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('api\\modules\\v1\\...', Array, Array)
+#3 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('api\\modules\\v1\\...', Array, Array)
+#4 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\base\Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\base\Module.php(510): yii\base\Module->getModule('v1')
+#6 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('v1/users')
+#7 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('v1/users', Array)
+#8 D:\Yii-advanced-improved-rest\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\Yii-advanced-improved-rest\api\index.php(19): yii\base\Application->run()
+#10 {main}
+2016-07-21 06:32:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/users'
+]
+
+$_COOKIE = [
+    '_frontendCSRF' => '2784e63a6a29454d2cb67d7946babef033ed189dac64b6281ddb2c06b0bc61cda:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"EFRY-8EQKLqJ8BmbTWjwKkjTVE6vGjel\";}'
+    '_backendCSRF' => '48d97212b9f8a47dfa513d9e1430235c7606b632ccf903118549afe7ae911ebfa:2:{i:0;s:12:\"_backendCSRF\";i:1;s:32:\"_FLW5oEYYWyTWe1wgbi5frWxgmhI2B1P\";}'
+    'BACKENDSESSID' => 'ih0krhsmc9nv1eqohaknpcvti5'
+    'FRONTENDSESSID' => 'dj1sovkthtvk6li3g64qvpuqq7'
+    '_frontendIdentity' => 'cfbbaa9f8ed44f6e8d8f847b6f1541a0d5b73cd2974f56b3a5fcb0b7752b14f9a:2:{i:0;s:17:\"_frontendIdentity\";i:1;s:46:\"[2,\"oLo7WRi2bgquYEDfLovaD1gyp4tHritG\",1209600]\";}'
+    'backend_menu' => 'da93bfc085ff9407dad839b6ec81e6cdad96a345ab9e3614285c1598f37e494aa:2:{i:0;s:12:\"backend_menu\";i:1;s:6:\"normal\";}'
+    '_csrf' => 'e7121e9a8495e55ec6f4ce5dc3a65ec2e29163af0e27cd18a89e57108299abaca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"CnvPclwvWZ6fVfPtaktk0IShDT8krbGS\";}'
+    'PHPSESSID' => 'ot9hsj2ijhm71dcg4cmqu9r1k6'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Yii-advanced-improved-rest'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50746'
+    'SERVER_SOFTWARE' => 'PHP 5.6.19 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '9090'
+    'REQUEST_URI' => '/api/index.php?r=v1/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/api/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Yii-advanced-improved-rest\\api\\index.php'
+    'PHP_SELF' => '/api/index.php'
+    'QUERY_STRING' => 'r=v1/users'
+    'HTTP_HOST' => 'localhost:9090'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_frontendCSRF=2784e63a6a29454d2cb67d7946babef033ed189dac64b6281ddb2c06b0bc61cda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22EFRY-8EQKLqJ8BmbTWjwKkjTVE6vGjel%22%3B%7D; _backendCSRF=48d97212b9f8a47dfa513d9e1430235c7606b632ccf903118549afe7ae911ebfa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22_FLW5oEYYWyTWe1wgbi5frWxgmhI2B1P%22%3B%7D; BACKENDSESSID=ih0krhsmc9nv1eqohaknpcvti5; FRONTENDSESSID=dj1sovkthtvk6li3g64qvpuqq7; _frontendIdentity=cfbbaa9f8ed44f6e8d8f847b6f1541a0d5b73cd2974f56b3a5fcb0b7752b14f9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendIdentity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22oLo7WRi2bgquYEDfLovaD1gyp4tHritG%22%2C1209600%5D%22%3B%7D; backend_menu=da93bfc085ff9407dad839b6ec81e6cdad96a345ab9e3614285c1598f37e494aa%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22backend_menu%22%3Bi%3A1%3Bs%3A6%3A%22normal%22%3B%7D; _csrf=e7121e9a8495e55ec6f4ce5dc3a65ec2e29163af0e27cd18a89e57108299abaca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22CnvPclwvWZ6fVfPtaktk0IShDT8krbGS%22%3B%7D; PHPSESSID=ot9hsj2ijhm71dcg4cmqu9r1k6'
+    'REQUEST_TIME_FLOAT' => 1469082739.0503
+    'REQUEST_TIME' => 1469082739
+]
