@@ -31,3 +31,4 @@ phpunit.phar
 
 index-test
 index
+_protected/vendor
