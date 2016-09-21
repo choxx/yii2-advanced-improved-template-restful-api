@@ -1,4 +1,4 @@
-# yii2-advanced-improved-template-restful-api
+# yii2 advanced improved template - RESTful Api
 A fully featured Advanced Improved Template with RESTful Api support.
 
 Yii2-advanced-improved-template-restful-api is based on yii2-advanced-template created by [nenad-zivkovic](https://github.com/nenad-zivkovic/yii2-advanced-template).
